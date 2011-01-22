@@ -3,7 +3,7 @@ BEGIN {
   $Text::Keywords::Found::AUTHORITY = 'cpan:GETTY';
 }
 BEGIN {
-  $Text::Keywords::Found::VERSION = '0.002';
+  $Text::Keywords::Found::VERSION = '0.003';
 }
 # ABSTRACT: Class for a keyword found over a specific Text::Keywords::Container
 
@@ -54,7 +54,7 @@ Text::Keywords::Found - Class for a keyword found over a specific Text::Keywords
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 AUTHOR
 
