@@ -17,12 +17,12 @@ no_index:
   directory:
     - t/lib
 requires:
-  Moo: 0.009002
+  Moo: 0.009005
   perl: 5.010
 resources:
   homepage: http://github.com/Getty/p5-text-keywords/tree
   repository: git://github.com/Getty/p5-text-keywords.git
-version: 0.001
+version: 0.002
 x_Dist_Zilla:
   plugins:
     -

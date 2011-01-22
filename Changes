@@ -1,4 +1,8 @@
 Revision history for Text-Keywords
 
+0.002     2011-01-22 04:02:32 Europe/Berlin
+	- Added params to container
+	- Fixed regexp for matching
+
 0.001     2011-01-10 06:12:42 Europe/Berlin
 	- Initial official release
