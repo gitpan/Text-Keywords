@@ -3,7 +3,7 @@ BEGIN {
   $Text::Keywords::Container::AUTHORITY = 'cpan:GETTY';
 }
 BEGIN {
-  $Text::Keywords::Container::VERSION = '0.003';
+  $Text::Keywords::Container::VERSION = '0.004';
 }
 # ABSTRACT: Class for a container of serveral Text::Keywords::List
 
@@ -50,7 +50,7 @@ sub find_keywords {
 			$kl->[1]--;
 			my $found;
 			splice(@keywordlists, $idx, 1) if (!$kl->[1]);
-			my $rx = qr/(^|[\W_])($keyword)/i;
+			my $rx = qr/(^|[^\w]|_)($keyword)/i;
 			my @text_found;
 			my $primary_str = $primary;
 			push (@text_found, [$primary_str =~ $rx]), $primary_str =~ s{$rx}{} while $primary_str =~ $rx;
@@ -135,7 +135,7 @@ Text::Keywords::Container - Class for a container of serveral Text::Keywords::Li
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 AUTHOR
 
