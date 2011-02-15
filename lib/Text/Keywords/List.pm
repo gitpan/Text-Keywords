@@ -3,7 +3,7 @@ BEGIN {
   $Text::Keywords::List::AUTHORITY = 'cpan:GETTY';
 }
 BEGIN {
-  $Text::Keywords::List::VERSION = '0.004';
+  $Text::Keywords::List::VERSION = '0.900';
 }
 # ABSTRACT: Primitive keywords List class
 
@@ -28,7 +28,7 @@ Text::Keywords::List - Primitive keywords List class
 
 =head1 VERSION
 
-version 0.004
+version 0.900
 
 =head1 AUTHOR
 

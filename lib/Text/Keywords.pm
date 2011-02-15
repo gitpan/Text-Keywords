@@ -3,7 +3,7 @@ BEGIN {
   $Text::Keywords::AUTHORITY = 'cpan:GETTY';
 }
 BEGIN {
-  $Text::Keywords::VERSION = '0.004';
+  $Text::Keywords::VERSION = '0.900';
 }
 # ABSTRACT: Setup Text::Keywords::Container for analyzing some text
 
@@ -44,7 +44,7 @@ Text::Keywords - Setup Text::Keywords::Container for analyzing some text
 
 =head1 VERSION
 
-version 0.004
+version 0.900
 
 =head1 AUTHOR
 

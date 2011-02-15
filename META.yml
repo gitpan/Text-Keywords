@@ -22,7 +22,7 @@ requires:
 resources:
   homepage: http://github.com/Getty/p5-text-keywords/tree
   repository: git://github.com/Getty/p5-text-keywords.git
-version: 0.004
+version: 0.900
 x_Dist_Zilla:
   plugins:
     -

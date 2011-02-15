@@ -45,7 +45,7 @@
          "web" : "http://github.com/Getty/p5-text-keywords/tree"
       }
    },
-   "version" : "0.004",
+   "version" : "0.900",
    "x_Dist_Zilla" : {
       "plugins" : [
          {

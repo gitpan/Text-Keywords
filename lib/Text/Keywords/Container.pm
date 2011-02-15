@@ -3,7 +3,7 @@ BEGIN {
   $Text::Keywords::Container::AUTHORITY = 'cpan:GETTY';
 }
 BEGIN {
-  $Text::Keywords::Container::VERSION = '0.004';
+  $Text::Keywords::Container::VERSION = '0.900';
 }
 # ABSTRACT: Class for a container of serveral Text::Keywords::List
 
@@ -50,7 +50,7 @@ sub find_keywords {
 			$kl->[1]--;
 			my $found;
 			splice(@keywordlists, $idx, 1) if (!$kl->[1]);
-			my $rx = qr/(^|[^\w]|_)($keyword)/i;
+			my $rx = qr/(?:^|[^\w]|_)($keyword)(?:$|[^\w]|_)/i;
 			my @text_found;
 			my $primary_str = $primary;
 			push (@text_found, [$primary_str =~ $rx]), $primary_str =~ s{$rx}{} while $primary_str =~ $rx;
@@ -62,7 +62,6 @@ sub find_keywords {
 			for (@text_found) {
 				$found = 1;
 				my @matches = @{$_};
-				shift @matches;
 				my $found_string = shift @matches;
 				my $already_found = 0;
 				for my $cur_found (@founds) {
@@ -75,7 +74,6 @@ sub find_keywords {
 				my $cidx = 0;
 				for (@secondary_found) {
 					my @cmatches = @{$_};
-					shift @cmatches;
 					my $found_cstring = shift @cmatches;
 					if ($found_string eq $found_cstring and @matches ~~ @cmatches) {
 						delete $secondary_found[$cidx];
@@ -95,7 +93,6 @@ sub find_keywords {
 			for (@still_secondary_found) {
 				$found = 1;
 				my @matches = @{$_};
-				shift @matches;
 				my $found_string = shift @matches;
 				my $already_found = 0;
 				for my $cur_found (@founds) {
@@ -135,7 +132,7 @@ Text::Keywords::Container - Class for a container of serveral Text::Keywords::Li
 
 =head1 VERSION
 
-version 0.004
+version 0.900
 
 =head1 AUTHOR
 

@@ -24,7 +24,7 @@ my %WriteMakefileArgs = (
   'PREREQ_PM' => {
     'Moo' => '0.009005'
   },
-  'VERSION' => '0.004',
+  'VERSION' => '0.900',
   'test' => {
     'TESTS' => 't/*.t'
   }
